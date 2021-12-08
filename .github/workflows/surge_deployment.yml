@@ -44,4 +44,4 @@ jobs:
         run: npm install -global surge
         
       - name: Deploy surge
-        run: surge ./build bc21p3r.surge.sh ${{secrets.SURGE_TOKEN}}
+        run: surge ./build bc21p3r.surge.sh --token ${{secrets.SURGE_TOKEN}}
